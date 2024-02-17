@@ -1,0 +1,17 @@
+sozluk = {
+        "Down":"Aşağı",
+        "Up" :"Yukarı",
+        "Left":"Sol",
+        "Right":"Sağ",
+        "Cringe":"garip ya da utandırıcı bir şey",
+        "Lol":"komik bir şeye verilen cevap",
+}
+for i in range(1):
+    sozlukac = input("Sözlüğe hoşgeldiniz! Sözlüğü açmak ister misiniz?:").capitalize()
+    if sozlukac == "Evet":
+        kelime = input("Hangi kelime?:").capitalize()
+        if kelime in sozluk:
+            print(kelime,":",sozluk[kelime])
+        else:
+            print("Kelimeniz sözlükte yok!")
+            break
